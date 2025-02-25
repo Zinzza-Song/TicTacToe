@@ -3,8 +3,15 @@ import "./Board.css"
 import Square from './Square'
 
 export default class Board extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      squares: Array(9).fill(null)
+    }
+  }
+
   renderSquare(i) {
-    return <Square value={i} />
+    return <Square value={this.state.squares[i]} />
   }
 
   render() {
