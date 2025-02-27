@@ -1,12 +1,13 @@
-import React from 'react'
-import "./Square.css"
+/* eslint-disable react/prop-types */
+import React from 'react';
+import './Square.css';
 
-const Square = ({value, onClick}) => { 
+const Square = ({ value, onClick }) => {
   return (
-    <button className='square' onClick={onClick}>
+    <button className="square" onClick={onClick}>
       {value}
     </button>
-  )
-}
+  );
+};
 
-export default Square
+export default Square;
